@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Lorem Ipsum JSON Generator</h1>
+                <h2>Generate Static JSON Objects with predefined data types</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="well well-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="form-inline">
+                    <div class="form-group">
+                      <button type="button" class="btn btn-default btn-xs" name="make-parent">
+                        <span class="glyphicon glyphicon-triangle-top" aria-hidden="true" data-toggle="tooltip" title="Make parent"></span>
+                      </button>
+                      <button type="button" class="btn btn-default btn-xs" name="make-child">
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" data-toggle="tooltip" title="Make child"></span>
+                      </button>
+                        <label for="text1"></label>
+                        <input type="text" class="form-control" id="text1" placeholder="Key">
+                        <select class="form-control" name="data-types">
+                          <option value="" selected>--- Choose a data type ---</option>
+                          <option value="string">String</option>
+                          <option value="boolean">Boolean</option>
+                          <option value="array">Array</option>
+                        </select>
+                        <button type="button" class="btn btn-default btn-xs" name="add-node">
+                          <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" data-toggle="tooltip" title="Add another node"></span>
+                        </button>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <h3>JSON will output here:</h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#without-data">Without data</a></li>
+                  <li><a data-toggle="tab" href="#with-data">With data</a></li>
+                  <li><a data-toggle="tab" href="#documented">Documented</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="without-data" class="tab-pane fade in active">
+                    <samp>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</samp>
+                  </div>
+                  <div id="with-data" class="tab-pane fade">
+                    <samp>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</samp>
+                  </div>
+                  <div id="documented" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</body>
+
+</html>
